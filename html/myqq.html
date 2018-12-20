@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<style type="text/css">
+    	body{  font-family: "微软简谐体";font-size: 16px;line-height: 1.5em;background:#87CEEB;width:98%;height:98%;}
+    	textarea{background-color: #B0E0E6;color:#4682B4;}
+    	div{border: 3px #6495ED solid;}
+    	#div1{text-align:center;position: absolute;left: 20%;width:59%;height: 19%; top: 1%; }
+    	#div2{text-align:center;position: absolute;left: 2%;width:50%;height: 19%; top: 20%; }
+    	#div3{text-align:center;position: absolute;left: 22%;width:50%;height: 19%; top: 39%; }
+    	#div4{text-align:center;position: absolute;left: 2%;width:50%;height: 19%; top: 58%; }
+    	#div5{text-align:center;position: absolute;left: 22%;width:50%;height: 19%; top: 77%; }
+    	#div6{text-align:center;position: absolute;left: 85%;width:10%;height: 95%; top: 1%; }
+
+    </style>
+
+<script type="text/javascript">
+    function logIn1()
+     { 
+     	if(confirm("确定要发表吗?"))
+     	{
+	  	document.getElementById('comments').value = " ";
+		}
+	}
+	function logIn2()
+     { if(confirm("确定要发表吗?"))
+         {
+	     document.getElementById('notes').value = " ";
+	      }
+	}
+    function logIn3()
+     { if(confirm("确定要发表吗?"))
+         {
+	     document.getElementById('collection').value = " ";
+	      }
+	}
+	function logIn4()
+     { if(confirm("确定要发表吗?"))
+         {
+	     document.getElementById('opinion').value = " ";
+	      }
+	}
+
+ 
+</script>
+</head>
+<body>
+	<audio src="C:\Users\hp\Desktop\大鱼.ogg"autoplay="autoplay"></audio>
+<div id="div1">
+    <h1 style="font-family: 楷体;font-size: 55px;color:#778899;text-align: center;">Welcome to your library</h1></div>	
+
+ <div id="div2">
+ 	<form  style="color: #01B648">   comments: <br/>
+          <textarea style="color: #01B648" cols="20" rows="6"id="comments"></textarea>
+          <br/>
+          <input type="button" value="published" onClick="logIn1()"  >
+      </form>
+
+</div>
+<div id="div3">
+ 	<form  style="color: #01B648">   notes: <br/>
+          <textarea cols="20" rows="6"id="notes"></textarea>
+          <br/>
+          <input type="button" value="published" onClick="logIn2()"  >
+      </form>
+</div>
+
+<div id="div4">
+ 	<form  style="color: #01B648"> collection: <br/>
+          <textarea cols="20" rows="6"id="collection"></textarea>
+          <br/>
+          <input type="button" value="published" onClick="logIn3()"  >
+      </form>
+</div>
+
+<div id="div5">
+ 	<form  style="color: #01B648">   opinion: <br/>
+         <textarea cols="20" rows="6"id="opinion"></textarea>
+          <br/>
+          <input type="button" value="published" onClick="logIn4()"  >
+      </form>
+
+</div>
+<div id="div6">
+	 <h1 style="font-family: 楷体;color:#4682B4;text-align: center;">my</h1>
+	<ul style="color: #01B648">
+        <li>my  comments</li>
+        <li>my notes </li>
+         <li>my  collection</li>
+         <li>my  opinion</li>
+    </ul>
+</div>
+
+
+
+
+
+</body>
+</html>
